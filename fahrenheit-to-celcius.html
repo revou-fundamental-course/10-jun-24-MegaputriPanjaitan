@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Suhu</h1>
+        <h5>Masukkan suhu derajat Fahrenheit (&deg;F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celsius (&deg;C).</h5>
+        <div class="converter">
+            <div class="input-group">
+                <div>
+                    <label for="fahrenheit">Fahrenheit (°F):</label>
+                    <textarea id="fahrenheit" placeholder="Masukkan suhu dalam Fahrenheit"></textarea>
+                </div>
+                <div>
+                    <label for="celsius">Celcius (°C):</label>
+                    <textarea id="celsius" readonly></textarea>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button onclick="convertToCelsius()">Konversi</button>
+                <button onclick="resetFields()">Reset</button>
+                <button onclick="reverseConversion()">Reverse</button>
+            </div>
+            <div class="calculation">
+                <h5>Cara Kalkulasi:</h5>
+                <textarea id="calculation" readonly></textarea>
+            </div>
+            <div class="link">
+                <a href="index.html">Celsius ke Fahrenheit</a>
+            </div>
+            <div id="fahrenheitToCelsius">
+                <h2>Cara Konversi Dari Fahrenheit (°F) ke Celsius (°C)</h2>
+                <h5>Suhu <span class="subject-info">S</span> dalam derajat Celsius (&deg;C) sama dengan suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) dikurangi 32, lalu hasilnya dikalikan dengan 5/9 .</h5>
+                <h5> S(°C) = ( S(°F) - 32 )  x 5/9 </h5>
+                <h5>atau</h5>
+                <h5> S(°C) = ( S(°F) - 32 ) x 0.5556 </h5>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
